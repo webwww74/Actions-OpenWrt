@@ -13,10 +13,8 @@
 name: Update Checker
 
 env:
-#  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_URL: https://github.com/webwww74/immortalwrt-mt798x
-  REPO_BRANCH: openwrt-21.02
-
+  REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
+  REPO_BRANCH: openwrt-23.05
 on:
   workflow_dispatch:
 #  schedule:
