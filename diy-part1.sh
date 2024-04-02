@@ -14,8 +14,10 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-#echo 'src-git openclash https://github.com/vernesong/OpenClash' >>feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-#echo 'src-git singbox https://github.com/SagerNet/sing-box' >>feeds.conf.default
+src-git-full packages https://git.openwrt.org/feed/packages.git;openwrt-22.03
+src-git-full luci https://git.openwrt.org/project/luci.git;openwrt-22.03
+src-git-full routing https://git.openwrt.org/feed/routing.git;openwrt-22.03
+src-git-full telephony https://git.openwrt.org/feed/telephony.git;openwrt-22.03
+src-git-full helloworld https://github.com/fw876/helloworld
+src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
+src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
